@@ -1,39 +1,17 @@
-import Button from '@mui/material/Button';
-import ButtonGroup from '@mui/material/ButtonGroup';
 
+import React from 'react'
+import Buttons_Groups from './components/Buttons_Groups'
+import CheckBoxx from './components/CheckBoxx'
+import Container_section from './components/Container_section'
 
 function App() {
-  const CustomButton = () =>{
-    alert("Wellcome");
-  }
   return (
-    <>
-    <div className="app">
-      <h1>React MUI</h1>
-      <button>Click Me</button>
-      <Button>Click</Button>
-      <Button variant='contained' color='success'>Contained</Button>
-      <Button variant='outlined'>Outlined</Button>
-      <Button variant="contained" color='error' href="#contained-buttons">Clickable href</Button>
-      <Button variant="contained" href="#contained-buttons" disabled>Disabled</Button>
-      <br /><br /><br />
-      <ButtonGroup variant='contained' color='success'>
-        <Button onClick={CustomButton}>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-        <Button>Four</Button>
-      </ButtonGroup>
-
-      <br /><br /><br />
-      <ButtonGroup variant='outlined' orientation='vertical' color='success'>
-        <Button onClick={CustomButton}>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-        <Button>Four</Button>
-      </ButtonGroup>
+    <div>
+      {/* <Buttons_Groups/>
+      <CheckBoxx/> */}
+      <Container_section/>
     </div>
-    </>
-  );
+  )
 }
 
-export default App;
+export default App
